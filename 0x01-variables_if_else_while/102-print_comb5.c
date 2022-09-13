@@ -1,44 +1,68 @@
 #include <stdio.h>
 
-/**
-*main - print possible combination of two 2-digit
-*numbers
-*
-*Return: returns zero at the end
-*/
-int main(void)
-{
+	/**
 
-    int i, p;
-for (i = 0; i < 100; i++)
-{
-               for (p = 0; p < 100; j++)
-{
-           if (p > i)
-{
+	 * main - print possible combination of two 2-digit
 
-                      				putchar((i / 10) + '0');
+	 * numbers
 
-				putchar((i % 10) + '0');
+	 *
 
-				putchar(' ');
+	 * Return: returns zero at the end
 
-				putchar((p / 10) + '0');
+	 */
 
-				putchar((p % 10) + '0');
+	int main(void)
 
-				if (i != 98)
+	{
 
-                                              {
-                                putchar(',');
-                                                      					putchar(' ');
+		int i, p;
+
+	
+
+
+
+		for (i = 0; i < 100; i++)
+
+		{
+
+			for (p = 0; p < 100; j++)
+
+			{
+
+				if (p > i)
+
+				{
+
+					putchar((i / 10) + '0');
+
+					putchar((i % 10) + '0');
+
+					putchar(' ');
+
+					putchar((p / 10) + '0');
+
+					putchar((p % 10) + '0');
+
+					if (i != 98)
+
+					{
+
+						putchar(',');
+
+						putchar(' ');
+
+					}
 
 				}
 
-                              }
-                        }
-                   }
-              }
-          putchar('\n');
-      return (0);
-}
+			}
+
+		}
+
+		putchar('\n');
+
+		return (0);
+
+	}
+
