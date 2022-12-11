@@ -2,8 +2,9 @@
 
 /*
 *main-lowercase alphabets
-*Return: Always (0) 
-main(void)
+*Return: Always (0)
+*/ 
+int main(void)
 {
 	char c;
 for (c = 'a'; c <= 'z'; c++)
