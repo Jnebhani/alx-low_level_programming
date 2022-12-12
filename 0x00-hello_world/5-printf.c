@@ -2,6 +2,7 @@
 
 /*
  * main - Entry
+ *
  * Return: Always (Success)
  */
 int main(void)
