@@ -6,6 +6,7 @@
 *main - prints if number is positive, zero or negative
 *Return:Always (success)
 */
+
 int main(void)
 {
 	int n;
@@ -23,6 +24,6 @@ int main(void)
 	else
 	{
 		printf("%d is negative\n", n);
-	}	
+	}
 	return (0);
 }
