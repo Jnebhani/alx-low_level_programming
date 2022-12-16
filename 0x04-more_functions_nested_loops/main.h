@@ -2,7 +2,6 @@
 #define MAIN_H_INCLUDED
 
 #include <stdio.h>
-
 int _putcha(char c);
 int _isupper(int c);
 int _isdigit(int c);
