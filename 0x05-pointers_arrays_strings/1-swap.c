@@ -4,14 +4,18 @@
  * swap_int - function that swap the values of two integers
  * @a: is the first integer
  * @b: is the second integer
- * Return: returns nothing
+ * Return:always 0.
  */
 
 void swap_int(int *a, int *b);
 {
-	int m;
+	int a;
+	int b;
 
-	m = *a;
-	*a = *b;
-	*b = m;
+	a = 98;
+	b = 42;
+	printf("a=%d, b=%d\n", a, b);
+	swap_int(&a, &b);
+	printf("a=%d, b=%d\n", a, b);
+	return (0);
 }
