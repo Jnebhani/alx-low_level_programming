@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <unistd.h>
+
 /**
- * main - Entry
- * Reurn: 1
+ * main - prints exactly and that piece of art is useful
+ * followed by new line
+ * Return: 1
  */
 int main(void)
 {
