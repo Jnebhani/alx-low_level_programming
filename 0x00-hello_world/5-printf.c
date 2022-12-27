@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/*
- * main - Entry point for program.
- *
- *Return: 0 if no errors, return non zero if errors
+/**
+ * main - prints exactly with proper grammar
+ * followed by new line
+ * Return: 0 if no errors, return non zero if errors
  */
 int main(void)
 {
