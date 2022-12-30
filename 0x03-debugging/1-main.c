@@ -1,22 +1,20 @@
 #include <stdio.h>
-
-/** 
- * mian - causes an infinite loop
+/**
+ * mian -copy the main file that causes an infinite loop
  * Return: 0
  */
-
 int main(void)
 {
 	int i;
 
 	printf("infinite loop incoming :(\n");
-
 	i = 0;
 	/*
 	 * while (i < 10)
 	 * {
-	 * 		putchar(i);
+	 * putchar(i);
 	 * }
 	 */
-	 printf("infinite loop avoided! \\o/\n");	return (0);
+	printf("infinite loop avoided! \\o/\n");
+return (0);
 }
