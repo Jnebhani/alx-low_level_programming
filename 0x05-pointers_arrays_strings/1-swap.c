@@ -6,10 +6,11 @@
  * @b: is the second integer
  * Return:always 0.
  */
-void swap_int(int *a, int *b);{
+void swap_int(int *a, int *b)
+{
+	int m;
 
-	int temp = *a;
-	
+	m = *a;
 	*a = *b;
-	*b = temp;
+	*b = m;
 }
