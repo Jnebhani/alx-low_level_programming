@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 /**
  * count_word - helper function to the number of wordsin string
  * @s: string to evaluate
@@ -18,7 +18,7 @@ int count_word(char *s)
 	else if (flag == 0)
 	{
 	flag = 1;
-w++
+	w++;
 	}
 	}
 return (w);
@@ -36,7 +36,7 @@ char **strtow(char *str)
 
 	while (*(str + len))
 		len++;
-	words = count_words(str);
+	words = count_word(str);
 	if (words == 0)
 		return (NULL);
 	matrix = (char **) malloc(sizeof(char *) * (words + 1));
