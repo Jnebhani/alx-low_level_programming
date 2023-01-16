@@ -1,9 +1,6 @@
 #include <stdio.h>
-
 /**
- * main - entry point
- *
- * Description: prints the name of the file compiled from
+ * ain -prints the name of the file followed by new line
  *
  * Return: Always 0 (Success)
  */
