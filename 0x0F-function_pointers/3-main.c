@@ -27,6 +27,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
+	get_op_func(op);
 	if ((*op == '/' && num2 == 0) ||
 			    (*op == '%' && num2 == 0))
 	{
