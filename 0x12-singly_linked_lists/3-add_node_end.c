@@ -32,4 +32,4 @@ while (temp->next)
 	temp = temp->next;
 	temp->next = new;
 	return (new);
-	}
+}
