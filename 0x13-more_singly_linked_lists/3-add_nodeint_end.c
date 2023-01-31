@@ -20,7 +20,6 @@ if (!new)
 	 new->next = NULL;
 if (*head == NULL)
 	*head = new;
-*temp = new;
 return (new);
 }
 while (temp->next)
