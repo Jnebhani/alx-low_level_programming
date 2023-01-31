@@ -1,4 +1,4 @@
-#include "lists.h"
+#include "list.h"
 
 /**
  * add_nodeint_end - adds a node at the end of a linked list
@@ -19,6 +19,7 @@ if (!new)
 	 new->next = NULL;
 if (*head == NULL)
 	*head = new;
+*temp = new;
 return (new);
 }
 while (temp->next)
