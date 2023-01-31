@@ -1,4 +1,4 @@
-#include "lists.h"
+#include "list.h"
 
 /**
  * print_listint - prints all the elements of a linked list
@@ -15,5 +15,5 @@ size_t print_listint(const listint_t *h)
 		num++;
 		h = h->next;
 	}
-	return (num)
+	return (num);
 }
