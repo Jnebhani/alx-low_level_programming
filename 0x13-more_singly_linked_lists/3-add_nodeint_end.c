@@ -24,4 +24,5 @@ return (new);
 }
 while (temp->next)
 	temp = temp->next;
+	return (new);
 }
