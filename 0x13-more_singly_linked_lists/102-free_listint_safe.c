@@ -29,7 +29,7 @@ while (*h)
 		free(*h);
 		*h = NULL;
 		len++;
-		break
+		break;
 	}
 }
 *h = NULL;
