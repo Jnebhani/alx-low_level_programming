@@ -71,6 +71,7 @@ int main(int argc, char *argv[])
 					"Error: Can't read from file %s\n", argv[1]);
 			free(buffer);
 			exit(98);
+		}
 		w = write(to, buffer, r);
 		if (to == -1 || w == -1)
 		{
