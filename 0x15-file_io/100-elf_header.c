@@ -30,9 +30,9 @@ void check_elf(unsigned char *e_ident)
 	for (index = 0; index < 4; index++)
 	{
 		if (e_ident[index] != 127 &&
-    				e_ident[index] != 'E' &&
-	    			e_ident[index] != 'L' &&
-	    			e_ident[index] != 'F')
+		e_ident[index] != 'E' &&
+		e_ident[index] != 'L' &&
+		e_ident[index] != 'F')
 		{
 			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
 			exit(98);
@@ -174,7 +174,7 @@ void print_osabi(unsigned char *e_ident)
 void print_abi(unsigned char *e_ident)
 {
 	printf("  ABI Version:                       %d\n",
-			       e_ident[EI_ABIVERSION]);
+	e_ident[EI_ABIVERSION]);
 }
 /**
  * print_type - Prints the type of an ELF header.
@@ -213,12 +213,12 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
  * @e_entry: The address of the ELF entry point.
  * @e_ident: A pointer to an array containing the ELF class.
  */
-void print_entry(unsigned long int e_entry, unsigned char *e_ident)
+void print_entry(unsigned long int e_entry,
+	unsigned char *e_ident)
 {
 	printf("  Entry point address:               ");
-
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
-		{
+	{
 			e_entry = ((e_entry << 8) & 0xFF00FF00) | ((e_entry >> 8) & 0xFF00FF);
 			e_entry = (e_entry << 16) | (e_entry >> 16);
 		}
@@ -243,7 +243,7 @@ void close_elf(int elf)
 	}
 }
 /**
- * main - Displays the information contained in the 
+ * main - Displays the information contained in the
  * @argc: The number of arguments supplied to the program.
  * @argv: An array of pointers to the arguments.
  *
