@@ -1,34 +1,34 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
- * cap_string - a function that capitalizes all words of a string
- * @n: input string
- * Return: caps on first letter of a separator
+ * cap_string - capitalizes all words of a string
+ * @str: the string to change the first letter of a word in uppercase
+ *
+ * Return: capitalizes letters
  */
-char *cap_string(char *n)
+char *cap_string(char *str)
 {
-	int i, x;
-	int cap = 32;
-	int separators[] = {',', ';', '.', '?', '"',
-			    '(', ')', '{', '}', ' ', '\n', '\t'};
+	int i;
+	int j;
+	char c[] = {44, 59, 46, 33, 63, 34, 40, 41, 123, 125, 32, 10, 9};
 
-	for (i = 0; n[i] != '\0'; i++)
+	i = 0;
+
+	while (str[i] != '\0')
 	{
-		if (n[i] >= 'a' && n[i] <= 'z')
+		if (i == 0 && str[i] >= 97 && str[i] <= 122)
 		{
-			n[i] = n[i] - cap;
+			str[i] = str[i] - 32;
 		}
-
-		cap = 0;
-
-		for (x = 0; x <= 12; x++)
+		j = 0;
+		while (c[j] != '\0')
 		{
-			if (n[i] == separators[x])
+			if (c[j] == str[i] && (str[i + 1] >= 97 && str[i + 1] <= 122))
 			{
-				x = 12;
-				cap = 32;
+				str[i + 1] = str[i + 1] - 32;
 			}
+			j++;
 		}
+		i++;
 	}
-	return (n);
+	return (str);
 }
